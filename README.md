@@ -7,4 +7,6 @@ Projects (My Works) section will be updated when I can.
 
 Resumé section will be added later.
 
-Website doest NOT look good on mobile devices and/or tablets. I need to include code for that.
+Website does NOT look good on mobile devices and/or tablets. I need to include code for that.
+
+Some small errors that I noticed after commiting the changes will be fixed later.
