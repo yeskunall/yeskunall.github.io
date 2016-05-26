@@ -1,145 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=" device-width "", intial-scale="1.0">
-    <link rel="stylesheet" href="vendors/css/normalize.css">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-    <link rel="stylesheet" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/queries.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,100' rel='stylesheet' type='text/css'>
-    <title>Home</title>
+    <title>Home of Kunall Banerjee</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kunall Banerjee's personal website">
+    <meta name="author" content="Kunall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        .intro h1:before {
+            content: 'KUNALL';
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <ul class="main-nav">
-            <li><a href="#top">Kunall Banerjee</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Resumé</a></li>
-        </ul>
-    </nav>
-    <header>
-        <div class="header-text">
-            <h1>Kunall Banerjee</h1>
-            <p>Future Software Engineer / Web Developer</p>
-            <a class="btn btn-full js--scroll-to-about" href="#about">About</a>
-            <a class="btn btn-ghost js--scroll-to-contact" href="#contact">Contact me</a>
-
-        </div>
-    </header>
-    <section class="about js--about" id="top">
-        <div class="row">
-            <div class="col span-1-of-3">
-                <img src="public/images/pfp.png">
-            </div>
-            <div class="col span-2-of-3">
-                <h2>about</h2>
-                <h3>Student at <i>Carleton University, Canada</i></h3>
-                <p>When I'm not working, I'm either eating, sleeping, watching YouTube, or doing all three at the same time.</p>
-                <p><a href="https://ca.linkedin.com/in/yeskunall"><i class="ion-social-linkedin icon-big"></i></a>
-                    <a href="https://github.com/yeskunall"><i class="ion-social-github icon-big"></i></a>
-                    <a href="mailto:yeskunall@gmail.com"><i class="ion-android-mail icon-big"></i></a>
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="projects project-box" id="projects">
-        <div class="row">
-            <h2>Projects</h2>
-            <p>Some of my works</p>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <h3>Project Title 1</h3>
-                <p>Project details go here</p>
-            </div>
-            <div class="col span-1-of-3">
-                <h3>Project Title 1</h3>
-                <p>Project details go here</p>
-            </div>
-            <div class="col span-1-of-3">
-                <h3>Project Title 1</h3>
-                <p>Project details go here</p>
-            </div>
-        </div>
-    </section>
-    <section class="form js--contact" id="contact">
-        <div class="row">
-            <h2>contact me</h2>
-        </div>
-        <div class="row">
-            <form method="post" action="#" class="contact-form">
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
-                    </div>
+    <!-- Navigation -->
+    <div class="main-nav">
+        <div class="container">
+            <header class="group top-nav">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                    <span class="logo">KUNALL BANERJEE</span>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="msg">Message</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea name "msg" placeholder="Your message" required></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Send">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="row">
-            <div class="footer-nav">
-                <div class="col span-2-of-4">
+                <nav id="navbar-1" class="navbar item-nav">
                     <ul>
-                        <li>
-                            <a href="#top">Home</a>
-                        </li>
-                        <li>
-                            <a href="#projects">My Works</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experience</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#skills">Skills</a></li>
                     </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="img/pfp.png" alt="Avatar">
                 </div>
-                <div class="col span-1-of-4">
-                    <p>Made with <i class="ion-heart footer-icon"></i> by <a href="https://twitter.com/iamxypto">@iamxypto</a></p>
+                <div class="unit-80">
+                    <h1>I am a<br><span id="typed"></span></h1>
                 </div>
-                <div class="col span-1-of-4">
-                    <p>Copyright &copy; 2015 52KB</p>
+                <p>
+                    STUDENT AT CARLETON UNIVERSITY, CANADA.
+                </p>
+                <p>When I'm not working, I'm either eating, sleeping, watching YouTube, or doing all three at the same time.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Work<br>Experience</h1>
+            <ul class="work-list">
+                <li>April 2014 - August 2014</li>
+                <li><a href="#">Nisos Technologies</a></li>
+                <li>Intern</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Award & Achievements -->
+    <div class="award section second" id="achievements">
+        <div class="container">
+            <h1>Awards, Achievements &amp; <br>Certifications</h1>
+            <ul class="award-list list-flat">
+                <li>March 2016 - Present</li>
+                <li>freeCodeCamp - Full Stack Web Development Certification</li>
+                <li>ongoing - see my progress <a href="https://www.freecodecamp.com/yeskunall">here</a></li>
+            </ul>
+            <ul class="award-list list-flat">
+                <li>May 2016</li>
+                <li><a href="https://courses.edx.org/certificates/534f7a7a1e934880b1e5abe5a4546d84" target="_blank">M101X: Introduction to MongoDB using the MEAN Stack</a></li>
+            </ul>
+            <ul class="award-list list-flat">
+                <li>2014-2015</li>
+                <li>Awarded an Entrance Scholarship at Carleton University</li>
+            </ul>
+            <ul class="award-list list-flat">
+                <li>November 2013</li>
+                <li>Nominated to attend the <i>National Youth Leadership Forum (NYLF): Careers in Engineering &amp; Technology</i> at University of California, Berkeley</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Technical<br>Skills</h1>
+            <ul class="skill-list list-flat">
+                <li>Web Technologies</li>
+                <li>HTML5 / CSS3 / SASS (SCSS::Stylus) / PHP / Javascript</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Database</li>
+                <li>MySQL / MongoDB / SQLite3</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Frameworks</li>
+                <li>Ruby on Rails / NodeJS &amp; Express / Laravel</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote">
+        <div class="container text-centered">
+            <h1>“That's the real trouble with the world, too many people grow up. They forget.” - Walt Disney</h1>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="units-row">
+                <div class="unit-50">
+                    <p>Made with <i class="fa fa-heart"></i> by @<a href="https://twitter.com/iamxypto">iamxypto</a></p>
+                </div>
+                <div class="unit-50">
+                    <ul class="social list-flat right">
+                        <li><a href="mailto:yeskunall96@gmail.com"><i class="fa fa-send"></i></a></li>
+                        <li><a href="http://ca.linkedin.com/in/yeskunall"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="http://github.com/yeskunall"><i class="fa fa-github"></i></a></li>
+                        <li><a href="http://twitter.com/iamxypto"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+        function newTyped() {}
+        $(function () {
+            $("#typed").typed({
+                // Change to edit type effect
+                strings: ["coder.", "developer.", "designer?"],
+
+                typeSpeed: 90,
+                backDelay: 700,
+                contentType: "html",
+                loop: !0,
+                resetCallback: function () {
+                    newTyped()
+                }
+            }), $(".reset").click(function () {
+                $("#typed").typed("reset")
+            })
+        });
+    </script>
 </body>
-<script type="text/javascript" src="vendors/js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<script type="text/javascript" src="vendors/js/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="public/js/script.js"></script>
 
 </html>
-
-
-<!-- Background image courtesy of Greg Rakozy: https://unsplash.com/photos/0LU4vO5iFpM -->
