@@ -1,0 +1,134 @@
+$main: #252529;
+$secondary: #8b8b9f;
+$highlight: #73e298;
+$white: #FFFFFF;
+@media only screen and (max-width: 768px) {
+    #main-nav {
+        display: none;
+    }
+    #main-nav.active {
+        display: block;
+        width: 100%;
+        a {
+            display: block;
+            padding: 1em 0;
+            border-bottom: 1px solid #E9E9E9;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .menu {
+        display: block;
+        float: right;
+        i {
+            font-size: 1.5em;
+            color: $main;
+            padding-top: .6em;
+        }
+    }
+    #banner {
+        padding: 3.5em 0;
+        #poster {
+            width: 250px;
+            .play-button {
+                width: 60px;
+                margin: -30px 0 0 -30px;
+            }
+        }
+        #content {
+            margin-left: 50px;
+            .title {
+                font-size: 1.5em;
+            }
+            .ratings {
+                i {
+                    font-size: 1em;
+                }
+            }
+            .description {
+                font-size: .9em;
+            }
+            .info {
+                font-size: .7em;
+                margin-top: 2em;
+                span {
+                    margin: 0 .25em;
+                }
+            }
+        }
+    }
+    #popular-movies,
+    #popular-tv-shows {
+        padding: 3em 0;
+        header {
+            padding: 0 0 1.5em 1.25%;
+            h2 {
+                font-size: 1.5em;
+            }
+            .view-more {
+                margin: .75em 2.25% 0 0;
+            }
+        }
+    }
+    .row {
+        .movies,
+        .tv-shows {
+            width: 30.6%;
+            margin: 0 1.25% 2em 1.25%;
+            .title {
+                font-size: 1em;
+                margin: .5em 0 0 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #banner {
+        #banner-content-wrapper {
+            display: block;
+            #poster {
+                width: 250px;
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+            #content {
+                width: 100%;
+                margin: 1em auto 0 auto;
+            }
+        }
+    }
+    #popular-movies,
+    #popular-tv-shows {
+        header {
+            margin-bottom: 2em;
+        }
+    }
+    .row {
+        .movies,
+        .tv-shows {
+            width: 250px;
+            margin: 0 auto 2em auto;
+            float: none;
+        }
+    }
+    #newsletter {
+        padding: 3em 0;
+        h2 {
+            font-size: 1.35em;
+        }
+        .sign-up-form {
+            margin-top: 2em;
+            input[type="text"],
+            input[type="email"] {
+                width: 90%;
+                margin: 0 0 1em 0;
+            }
+            .button {
+                margin-top: 2em;
+            }
+        }
+    }
+}
